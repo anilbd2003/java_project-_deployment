@@ -82,5 +82,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <finalName>docker-demo</finalName>
   </build>
 </project>
