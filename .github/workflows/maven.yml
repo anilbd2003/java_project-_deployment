@@ -16,7 +16,7 @@ on:
 
 jobs:
   build_job1:
-
+    
     runs-on: ubuntu-latest
 
     steps:
@@ -33,6 +33,8 @@ jobs:
           path: staging
 
   docker_build_push_job2:
+    
+    needs: build_job1
     
     runs-on: ubuntu-latest
     
