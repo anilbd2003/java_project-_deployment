@@ -32,9 +32,9 @@ jobs:
         name: Package
         path: staging
         
-    # - name: Build and push
-    #   uses: docker/build-push-action@v6
-    #   with:
-    #    push: true
-    #    tags: anildevops21/docker123:latest
+    - name: Build and push
+      uses: docker/build-push-action@v6
+      with:
+       push: true
+       tags: anildevops21/docker123:latest
           
