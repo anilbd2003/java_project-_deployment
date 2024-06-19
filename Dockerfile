@@ -11,10 +11,7 @@
 # ENTRYPOINT ["java","-jar","app.jar"]
 
 FROM openjdk:8-jre-alpine
-
-EXPOSE 8080
-
-COPY target/docker-demo.jar /usr/app/
 WORKDIR /usr/app
-
-ENTRYPOINT ["java", "-jar", "docker-demo.jar"]
+EXPOSE 8080
+COPY target/docker-demo.jar .
+CMD ["java", "-jar", "docker-demo.jar"]
