@@ -14,7 +14,7 @@ FROM openjdk:8-jre-alpine
 
 EXPOSE 8080
 
-COPY ./build/libs/docker-demo.jar /usr/app/
+COPY target/docker-demo.jar /usr/app/
 WORKDIR /usr/app
 
 ENTRYPOINT ["java", "-jar", "docker-demo.jar"]
