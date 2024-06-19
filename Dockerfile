@@ -12,6 +12,6 @@
 
 FROM openjdk:8-jre-alpine
 WORKDIR /usr/app
-COPY java_project-_deployment/target/docker-demo.jar .
+COPY /home/runner/work/java_project-_deployment/java_project-_deployment/target/docker-demo.jar .
 EXPOSE 8080
 CMD ["java", "-jar", "docker-demo.jar"]
