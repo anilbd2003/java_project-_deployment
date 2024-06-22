@@ -3,7 +3,7 @@ on:
    - cron: "*/2 * * * *"
 
 jobs:
-  demojob:
+  demo-upjob:
     runs-on: ubuntu-latest
     steps:
       - run: echo "current time is $(date)" 
