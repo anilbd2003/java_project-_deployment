@@ -1,0 +1,10 @@
+on:
+  schedule:
+   - corn: "*/2 * * * *"
+
+jobs:
+  demojob:
+
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "current time is $date" 
